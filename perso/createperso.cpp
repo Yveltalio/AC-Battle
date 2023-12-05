@@ -23,6 +23,10 @@ Personnage ChoisirGentil()
         std::cout << "5.	Eivor Ami-des-loups  " << std::endl;
         std::cin >> choix;
     }
+    if (choix == 1)
+    {
+        
+    }
 }
 
 

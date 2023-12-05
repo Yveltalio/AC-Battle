@@ -1,6 +1,18 @@
 #ifndef PERSO.HPP
 #define PERSO.HPP
 #include<iostream>
+#include <sstream>
+#include <Windows.h>
+
+// mettre cette classe dans le même .hpp que votre classe parent
+class MBuf : public std::stringbuf {
+public:
+	int sync() {
+		fputs(str().c_str(), stdout);
+		str("");
+		return 0;
+	}
+};
 
 
 class Personnage 
