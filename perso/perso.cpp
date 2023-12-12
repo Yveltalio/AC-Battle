@@ -24,7 +24,7 @@ std::string Personnage::get_classe()
 {
     return m_classe;
 }
-int Personnage::get_gentil()
+bool Personnage::get_gentil()
 {
     return m_gentil;
 }
@@ -35,4 +35,12 @@ void Personnage::set_HP(int m_HP)
 void Personnage::set_stamina(int m_stamina)
 {
     this->m_stamina = m_stamina;
+}
+std::vector<Attaque> Personnage::get_Attaques()
+{
+    return m_Attaques;
+}
+std::vector<Deffense> Personnage::get_defense()
+{
+    return m_Deffenses;
 }

@@ -1,5 +1,39 @@
 #include "../perso/perso.hpp"
+#include "ascii.hpp"
+#include <iostream>
 
+int appel(std::string choixPerso){
+	if (choixPerso == "Ezio") {
+		Ezio();
+	} 
+	else if (choixPerso == "Altair") {
+		Altair();	
+	}
+	else if (choixPerso == "Edward") {
+		Edward();
+	}
+	else if (choixPerso == "Bayek") {
+		Bayek();
+	}
+	else if (choixPerso == "Eivor") {
+		Eivor();
+	}
+	else if (choixPerso == "Vieri") {
+		Vieri();
+	}
+	else if (choixPerso == "Uberto") {
+		Uberto();
+	}
+	else if (choixPerso == "Haytham") {
+		Haytham();
+	}
+	else if (choixPerso == "Jacob") {
+		Jacob();
+	}
+	else if (choixPerso == "Fulke") {
+		Fulke();
+	}
+}
 
 int Ezio() {
 

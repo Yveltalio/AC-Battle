@@ -18,6 +18,7 @@ public:
 	}
 };
 
+
 class Personnage 
 {
     private :
@@ -30,15 +31,26 @@ class Personnage
         
         
     public :
+        Personnage(){};
         Personnage(int HP,int stamina,std::string classe,bool gentil,std::vector<Attaque> Attaques,std::vector<Deffense> Defenses);
         ~Personnage();
         int get_HP();
         int get_stamina();
         std::string get_classe();
-        int get_gentil();
+        bool get_gentil();
         void set_HP(int m_HP);
         void set_stamina(int m_stamina);
+        vector<Attaque> get_Attaques();
+        vector<Deffense> get_defense();
 
+};
+
+
+
+struct Les_Personnages {
+    Personnage Perso1;
+    Personnage Perso2;
+    Les_Personnages(){};
 };
 
 Personnage ChoisirPerso(int camp);

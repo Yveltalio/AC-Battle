@@ -1,6 +1,6 @@
 #include "../perso/perso.hpp"
 
-int main() {
+Les_Personnages menuIntro() {
 
 	SetConsoleOutputCP(CP_UTF8);
 	setvbuf(stdout, nullptr, _IONBF, 0);
@@ -44,6 +44,7 @@ int main() {
     cin >> choix;  
     if (choix == 1){
        Personnage Personnage1 = ChoisirPerso(0); // n'importe quel camp
+       Personnage Personnage2 = Personnage1;
        if (Personnage1.get_gentil() == true)
        {
         Personnage Personnage2 = ChoisirPerso(2); // choix seulement mechant
@@ -52,6 +53,10 @@ int main() {
        {
         Personnage Personnage2 = ChoisirPerso(1); // choix seulement gentil
        }
+       Les_Personnages LesPersos = Les_Personnages();
+       LesPersos.Perso1 = Personnage1;
+       LesPersos.Perso2 = Personnage2;
+       return LesPersos;
 
     }
     else if (choix == 2) {
@@ -173,11 +178,11 @@ int main() {
             cout << "Confiant de sa force, Vieri attaque son adversaire a main nue" << endl;
             cout << "Defense : " << endl;
             cout << "Parade : -10 PV" << endl;
-            cout << "" << endl;
+            cout << "Pare l attaque pour reduire les degats" << endl;
             cout << "Esquive (1 tour sur 2) : Annule attaque" << endl;
-            cout << "" << endl;
+            cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
-            cout << "" << endl;
+            cout << "Prend une potion de soin" << endl;
         }
         else if (choix2 == 2)
         {
@@ -190,11 +195,11 @@ int main() {
         cout << "Coup de poing : 10 PV, 10 PA" << endl;
         cout << "Confiant de sa force, Uberto attaque son adversaire a main nue" << endl;
         cout << "Parade : -10 PV" << endl;
-        cout << "" << endl;
+        cout << "Pare l attaque pour reduire les degats" << endl;
         cout << "Esquive (1 tour sur 2) : Annule attaque" << endl;
-        cout << "" << endl;
+        cout << "esquive l attaque pour recevoir aucun degat" << endl;
         cout << "Soin : +20 PV, +20 PA" << endl;
-        cout << "" << endl;
+        cout << "Prend une potion de soin" << endl;
 
         }
         else if (choix2 == 3)
@@ -208,11 +213,11 @@ int main() {
         cout << "Pistolet a silex (1 tour sur 2) : 30 PV, 30 PA" << endl;
         cout << "Haytham prend ces distances pour tirer sur la cible" << endl;
         cout << "Parade : -10 PV" << endl;
-        cout << "" << endl;
+        cout << "Pare l attaque pour reduire les degats" << endl;
         cout << "Esquive (1 tour sur 2) : Annule attaque" << endl;
-        cout << "" << endl;
+        cout << "esquive l attaque pour recevoir aucun degat" << endl;
         cout << "Soin : +20 PV, +20 PA" << endl;
-        cout << "" << endl; 
+        cout << "Prend une potion de soin" << endl; 
         }
         else if (choix2 == 4)
         {
@@ -225,11 +230,11 @@ int main() {
         cout << "Lance de couteaux : 25 PV, 25 PA" << endl;
         cout << "Prend ces distances pour attaquer la cible avec des couteaux" << endl;
         cout << "Parade : -10 PV" << endl;
-        cout << "" << endl;
+        cout << "Pare l attaque pour reduire les degats" << endl;
         cout << "Esquive (1 tour sur 2) : Annule attaque" << endl;
-        cout << "" << endl;
+        cout << "esquive l attaque pour recevoir aucun degat" << endl;
         cout << "Soin : +20 PV, +20 PA" << endl;
-        cout << "" << endl;
+        cout << "Prend une potion de soin" << endl;
         }
         else if (choix2 == 5)
         {
@@ -242,11 +247,11 @@ int main() {
         cout << "Bouclier : 10 PV, 15 PA" << endl;
         cout << "Enferme l'ennemi petit a petit dans un coin afin de lui assemer des coups de bouclier" << endl;
         cout << "Bouclier : -10 PV" << endl;
-        cout << "" << endl;
+        cout << "Pare l attaque pour reduire les degats" << endl;
         cout << "Esquive (1 tour sur 2) : Annule attaque" << endl;
-        cout << "" << endl;
+        cout << "esquive l attaque pour recevoir aucun degat" << endl;
         cout << "Soin : +20 PV, +20 PA" << endl;
-        cout << "" << endl;   
+        cout << "Prend une potion de soin" << endl;   
         }
     }
     else if (choix == 4) {
@@ -267,7 +272,11 @@ int main() {
     cout << u8" @@  @@@    @@@@ @@ " << endl;
     cout << u8"    @@@@@@@@@@@@    " << endl;
     cout << " Au revoir Assassin " << endl;
-        return 0;
+    Les_Personnages LesPersos = Les_Personnages();
+    LesPersos.Perso1 = Personnage();
+    LesPersos.Perso2 = Personnage();
+    LesPersos.Perso1.set_HP(800);
+    return LesPersos;
     }
     else {
         cout << "Mauvais choix assassin, reessaye ! ";
