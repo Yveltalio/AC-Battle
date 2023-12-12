@@ -1,6 +1,8 @@
 #ifndef COMPETENCE.HPP
 #define COMPETENCE.HPP
 #include <iostream>
+#include "./attaque/attaque.hpp">
+#include "./defense/defense.hpp">
 class Competence
 {
     public :

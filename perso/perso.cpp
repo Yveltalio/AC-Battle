@@ -1,11 +1,13 @@
 #include "perso.hpp"
 
-Personnage::Personnage(int HP,int stamina,std::string classe,bool gentil)//,std::vector<Attaque> attaques)
+Personnage::Personnage(int HP,int stamina,std::string classe,bool gentil,std::vector<Attaque> Attaques,std::vector<Deffense> Deffenses)//,std::vector<Attaque> attaques)
 {
     m_HP = HP;
     m_stamina = stamina;
     m_classe = classe;
     m_gentil = gentil;
+    m_Attaques = Attaques;
+    m_Deffenses = Deffenses;
     //m_attaques = attaques
 }
 Personnage::~Personnage(){}

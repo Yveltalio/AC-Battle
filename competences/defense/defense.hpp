@@ -10,11 +10,12 @@ class Deffense : public Competence
         int m_soin;
         
     public :
-        Deffense::Deffense(std::string nom_competence,std::string description ,int reducDefense,int soin, int cout_stamina);
-        Deffense::~Deffense();
-        int Deffense::get_reducDefense();
-        int Deffense::get_soin();
+        Deffense(std::string nom_competence,std::string description ,int reducDefense,int soin, int cout_stamina);
+        ~Deffense();
+        int get_reducDefense();
+        int get_soin();
 
 };
+std::vector<Deffense> AttributionDefense(std::string nom_perso);
 
 #endif

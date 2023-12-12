@@ -3,6 +3,10 @@
 #include<iostream>
 #include <sstream>
 #include <Windows.h>
+#include<vector>
+#include "../competences/competence.hpp"
+
+using namespace std;
 
 // mettre cette classe dans le même .hpp que votre classe parent
 class MBuf : public std::stringbuf {
@@ -14,7 +18,6 @@ public:
 	}
 };
 
-
 class Personnage 
 {
     private :
@@ -22,16 +25,23 @@ class Personnage
         int m_stamina;
         std::string m_classe;
         bool m_gentil;
+        std::vector<Attaque> m_Attaques;
+        std::vector<Deffense> m_Deffenses;
+        
+        
     public :
-        Personnage::Personnage(int HP,int stamina,std::string classe,bool gentil);
-        Personnage::~Personnage();
-        int Personnage::get_HP();
-        int Personnage::get_stamina();
-        std::string Personnage::get_classe();
-        int Personnage::get_gentil();
-        void Personnage::set_HP(int m_HP);
-        void Personnage::set_stamina(int m_stamina);
+        Personnage(int HP,int stamina,std::string classe,bool gentil,std::vector<Attaque> Attaques,std::vector<Deffense> Defenses);
+        ~Personnage();
+        int get_HP();
+        int get_stamina();
+        std::string get_classe();
+        int get_gentil();
+        void set_HP(int m_HP);
+        void set_stamina(int m_stamina);
 
 };
 
+Personnage ChoisirPerso(int camp);
+
 #endif
+

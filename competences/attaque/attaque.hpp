@@ -15,5 +15,6 @@ class Attaque : public Competence
         int Attaque::get_attaque();
 
 };
+std::vector<Attaque> AttributionAttaque(std::string nom_perso);
 
 #endif
