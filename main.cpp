@@ -88,6 +88,5 @@ int main()
         return 0;
     }
     LesPersos.Perso1.set_HP(LesPersos.Perso1.get_HP()+LesPersos.Perso1.get_defense()[choix_defense-1].get_soin());
-    
     }
 }
