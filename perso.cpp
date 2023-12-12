@@ -1,6 +1,6 @@
 #include "perso.hpp"
 
-Personnage::Personnage(int HP,int stamina,std::string classe,bool gentil,std::vector<Attaque> Attaques,std::vector<Deffense> Deffenses)//,std::vector<Attaque> attaques)
+Personnage::Personnage(int HP, int stamina, std::string classe, bool gentil, std::vector<Attaque> Attaques, std::vector<Deffense> Deffenses)//,std::vector<Attaque> attaques)
 {
     m_HP = HP;
     m_stamina = stamina;
@@ -10,7 +10,7 @@ Personnage::Personnage(int HP,int stamina,std::string classe,bool gentil,std::ve
     m_Deffenses = Deffenses;
     //m_attaques = attaques
 }
-Personnage::~Personnage(){}
+Personnage::~Personnage() {}
 
 int Personnage::get_HP()
 {
