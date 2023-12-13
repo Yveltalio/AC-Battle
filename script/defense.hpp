@@ -11,7 +11,7 @@ private:
     int m_soin;
 
 public:
-    Deffense(std::string nom_competence, std::string description, int reducDefense, int soin, int cout_stamina);
+    Deffense(std::string nom_competence, std::string description, int reducDefense, int soin, int cout_stamina,int cooldownMAX);
     ~Deffense();
     int get_reducDefense();
     int get_soin();

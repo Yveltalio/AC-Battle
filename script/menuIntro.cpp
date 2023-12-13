@@ -41,11 +41,20 @@ Les_Personnages menuIntro() {
     cout << endl << endl;
 
     
+
+
     std::string choix;
+    std::string Pseudo1;
+    std::string Pseudo2;
+    cout << "Bienvenue dans Assassin's Creed Battle" << endl;
+    cout << "Assassin 1 entre ton pseudo : ";
+    cin >> Pseudo1;
+    cout << "Assasin 2 entre ton pseudo : ";
+    cin >> Pseudo2;
     cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
-    
     cin >> choix;
     if (choix == "1") {
+        cout << Pseudo1 << "Choisis ton camp" << endl;
         Personnage Personnage1 = ChoisirPerso(0); // n'importe quel camp
         Personnage Personnage2;
         if (Personnage1.get_gentil() == true)
@@ -89,6 +98,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin (utilisation unique) : +30 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
 
 
         }
@@ -109,6 +121,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin (utilisation unique) : +30 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix1 == "3") {
             cout << "Edward - 100PV - 100PA" << endl;
@@ -127,6 +142,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin (utilisation unique) : +15 PV, +10 PA" << endl;
             cout << "Prend une potion de soin" << endl << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix1 == "4") {
             cout << "Bayek - 100PV - 100PA" << endl;
@@ -145,6 +163,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin (utilisation unique) : +20 PV, +25 PA" << endl;
             cout << "Prend une potion de soin" << endl << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix1 == "5") {
             cout << "Eivor - 100PV - 100PA" << endl;
@@ -163,6 +184,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin (utilisation unique) : +10 PV, +45 PA" << endl;
             cout << "Prend une potion de soin" << endl << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
     }
     else if (choix == "3") {
@@ -191,6 +215,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix2 == "2")
         {
@@ -208,6 +235,9 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
 
         }
         else if (choix2 == "3")
@@ -226,11 +256,14 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix2 == "4")
         {
             cout << "Jacob Frye - 100 PV - 100 PA" << endl;
-            cout << "" << endl;
+            cout << "Ancien Maître Assassin, il fini par se faire emporter par l’orgueil et la soif de pouvoir. Il créa son propre gang afin de contrôler des quartiers de Londres. Il cache son épée dans sa canne afin de pouvoir prendre son ennemi par surprise" << endl;
             cout << "Lame secrete (utilisation unique) : 30 PV, 40 PA" << endl;
             cout << "Attaque l'ennemi avec une lame cachee dans la manche du personnage" << endl;
             cout << "Canne epee de Jacob : 20 PV, 25 PA" << endl;
@@ -243,11 +276,14 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
         else if (choix2 == "5")
         {
             cout << "Fulke - 100 PV - 100 PA " << endl;
-            cout << " " << endl;
+            cout << "Combattante et gnostique, elle chercha de son côté d’étranges artéfacts interdits mais se fit attrapée puis emprisonnée pour hérésie. Son bouclier sert à attaquer et à se défendre." << endl;
             cout << "Hache : 15 PV, 15 PA" << endl;
             cout << "Fulke brandit sa hache et fonce sur la cible" << endl;
             cout << "Arc : 20 PV, 15 PA" << endl;
@@ -260,10 +296,17 @@ Les_Personnages menuIntro() {
             cout << "esquive l attaque pour recevoir aucun degat" << endl;
             cout << "Soin : +20 PV, +20 PA" << endl;
             cout << "Prend une potion de soin" << endl;
+            cout << "------------------------------" << endl;
+            cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+            cin >> choix;
         }
     }
     else if (choix == "4") {
         cout << "Aymeric Marec \n Brendan Visine \n Sonita NOU \n Maxime Chort" << endl;
+        cout << "------------------------------" << endl;
+        cout << " 1. Jouer \n 2. Caracteristique Gentil \n 3. Caracterisque Malveillant \n 4. Credit \n 5. Quitter\n Ton choix : " << endl;
+        cin >> choix;
+
     }
     else if (choix == "5") {
         cout << "         @@         " << endl;

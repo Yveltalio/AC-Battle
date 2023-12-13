@@ -53,6 +53,8 @@ struct Les_Personnages {
     Personnage Perso1;
     Personnage Perso2;
     Les_Personnages() {};
+    string Pseudo1;
+    string Pseudo2;
 };
 
 Personnage ChoisirPerso(int camp);

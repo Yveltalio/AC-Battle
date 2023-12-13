@@ -85,7 +85,7 @@ Personnage ChoisirMechant()
 
 
 
-Personnage ChoisirPerso(int camp)
+Personnage ChoisirPerso(int camp, string Pseudo)
 {
     //setconsoleoutputcp(cp_utf8);
     //setvbuf(stdout, nullptr, _ionbf, 0);

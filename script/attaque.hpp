@@ -11,7 +11,7 @@ private:
     int m_degats;
 
 public:
-    Attaque(std::string nom_competence, std::string description, int degats, int cout_stamina);
+    Attaque(std::string nom_competence, std::string description, int degats, int cout_stamina,int cooldownMAX);
     ~Attaque();
     int get_attaque();
 
